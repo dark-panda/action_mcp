@@ -52,7 +52,9 @@ module ActionMCP
                   # --- JSON-RPC Path ---
                   :base_path,
                   # --- Origin validation (DNS rebinding protection) ---
-                  :allowed_origins
+                  :allowed_origins,
+                  # --- For backwards compatibility, allow sending serialized structured content in response ---
+                  :include_serialized_structured_content_in_response
 
     def initialize
       @logging_enabled = false
